@@ -2,26 +2,20 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    
-    public int MaxHealth = 100;
-    private int CurrentHealth;
+    public float health = 100f;
 
-    void Start()
+    public void TakeDamage(float damage)
     {
-        CurrentHealth = MaxHealth;
-    }
-
-    
-    void Die(){
-        Debug.Log(gameObject.name + " помер.");
-        Destroy(gameObject);
-    }
-
-    public void TakeDamage(int damage){
-        CurrentHealth -= damage;
-        Debug.Log(gameObject.name + " отримав " + damage + " пошкоджень. Здороі'я: " + CurrentHealth);
-        if (CurrentHealth <= 0){
+        health -= damage;
+        if (health <= 0)
+        {
             Die();
         }
+    }
+
+    void Die()
+    {
+        // Додайте код для смерті гравця (наприклад, перезапуск рівня або анімація смерті)
+        Debug.Log("Player died!");
     }
 }
