@@ -15,4 +15,4 @@ This repository, categorized into folders, contains all the code needed for Unit
 ![Not finished project](https://img.shields.io/badge/not_finished_project-f26d50)
 ![Progress Tag](https://img.shields.io/badge/in_progress-f8d7a5)
 [![One Author](https://img.shields.io/badge/one_author-%23f7a278)](https://github.com/Semi606)
-[![С#](https://img.shields.io/badge/C_sharp-%239fd6b3)](https://www.python.org/)
+![С#](https://img.shields.io/badge/C_sharp-%239fd6b3)
